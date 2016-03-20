@@ -1,0 +1,21 @@
+<h1>Movies#show</h1>
+<p>Find me in app/views/movies/show.html.erb</p>
+
+<table class="table table-striped">
+	
+
+
+<tr>
+	<td> <%=@movie.title%> </td>
+	<td> <%=@movie.country%> </td>
+	<td> <%=@movie.date%> </td>
+	<td> <%=@movie.director%> </td>
+	<td> <%=@movie.description%> </td>
+
+	
+</tr>
+
+</table>
+
+<%= link_to 'Edit' , edit_movie_path(@movie)%>
+<%= link_to 'Movies' , movies_path%>

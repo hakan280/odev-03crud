@@ -1,0 +1,11 @@
+<h1>All Movies</h1>
+<h3> <%= link_to "Add new movie", new_movie_path%> </h3>
+<table class="table table-striped">
+	<th>Title</th>
+	<th>Year</th>
+	<th>Director</th>
+	<th></th>
+	<th></th>
+
+	<%= render @movies %>
+</table>
